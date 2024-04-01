@@ -2,6 +2,7 @@
 
 var fs = require("node:fs");
 const { appendFile } = require("node:fs/promises");
+fs.mkdirSync("data");
 
 fs.writeFileSync("data/text1.txt", "Enjoy the little things in life ", "utf8");
 fs.writeFileSync("data/text2.txt", "because one day ", "utf8");
